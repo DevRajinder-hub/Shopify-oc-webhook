@@ -1,4 +1,3 @@
-// index.js
 const express = require('express');
 const crypto = require('crypto');
 
@@ -7,6 +6,10 @@ const PORT = 3000;
 const SHOPIFY_WEBHOOK_SECRET = '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'; 
 
 app.use(express.json({ type: 'application/json' }));
+
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 
 app.post('/webhooks/orders/cancelled', (req, res) => {
   const hmacHeader = req.get('X-Shopify-Hmac-Sha256');
@@ -29,5 +32,5 @@ app.post('/webhooks/orders/cancelled', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Webhook server running at http://localhost:${PORT}`);
+  console.log(`Webhook server running at http://localhost:${PORT}`);
 });
