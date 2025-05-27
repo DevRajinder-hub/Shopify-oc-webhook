@@ -3,7 +3,7 @@ const crypto = require('crypto');
 
 const app = express();
 const PORT = 3000;
-const SHOPIFY_WEBHOOK_SECRET = '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'; 
+const SHOPIFY_WEBHOOK_SECRET = 'f536de0f97bf86cfa1a0625b403c5ef80a94fb40ac48de3dc212318ab5585601'; 
 
 app.use(express.json({ type: 'application/json' }));
 
