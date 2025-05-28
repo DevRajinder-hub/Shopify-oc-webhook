@@ -7,7 +7,7 @@ app.use('/webhooks', express.raw({ type: 'application/json' }));
 app.use(express.json());
 
 // Webhook secret - your actual secret from Shopify
-const WEBHOOK_SECRET = 'c95c4e4f5c7e78c40b404950497061a7';
+const WEBHOOK_SECRET = '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';
 
 // Verify webhook authenticity
 function verifyWebhook(data, hmacHeader) {
