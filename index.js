@@ -3,7 +3,7 @@ const crypto = require('crypto');
 const app = express();
 
 // Shopify Webhook Secret
-const WEBHOOK_SECRET = 'c95c4e4f5c7e78c40b404950497061a7';
+const WEBHOOK_SECRET = '2a43af22258dc1da40aec7d4a0c4013a';
 
 // Health check
 app.get('/health', (req, res) => {
